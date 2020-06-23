@@ -2,15 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Hind', sans-serif;
-    background-image: url(img/591283.jpg);
+    background-image: url(img/bg.jpg);
 }
 
 .container {
     max-width: 1170px;
     margin: auto;
 }
-
-
 
 .photo {
     display: flex;
@@ -26,14 +24,6 @@ body {
     border: 3px solid #C6C4C9;
 }
 
-/* .photo img:hover {
-    width: 300px;
-    height: 300px;
-    transition: 0.5s;
-    border: none;
-    cursor: pointer;
-} */
-
 .photo h1 {
     font-size: 24px;
     margin-top: 5px;
@@ -42,7 +32,7 @@ body {
 }
 
 .my-projects p {
-    color: #000;
+    color: #fff;
     font-size: 18px;
     margin: 10px 0px;
 }
@@ -62,7 +52,6 @@ body {
 
 .my-projects__projects-common {
     display: flex;
-    /* align-items: center; */
 }
 
 .my-projects__projects-text {
@@ -91,6 +80,7 @@ body {
 
 .my-projects__projects-common a:hover {
    border: none;
+   color: #02CFEA;
    
 }
 
