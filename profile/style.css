@@ -3,6 +3,9 @@ body {
     padding: 0;
     font-family: 'Hind', sans-serif;
     background-image: url(img/bg.jpg);
+    background-size: cover;
+
+
 }
 
 .container {
@@ -15,6 +18,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 150px;
 }
 
 .photo img {
@@ -31,13 +35,17 @@ body {
     color: #ccc;   
 }
 
+header p {
+    color: aliceblue;
+}
+
 .my-projects p {
     color: #fff;
     font-size: 18px;
     margin: 10px 0px;
 }
 
-.my-projects h2 {
+.common-item h2 {
     text-align: center;
     margin: 70px 0;
     color: #ccc;
@@ -55,7 +63,7 @@ body {
 }
 
 .my-projects__projects-text {
-    margin-left: 70px;
+    margin-left: 93px;
 }
 
 .my-projects__projects-text h3 {
@@ -81,8 +89,72 @@ body {
 .my-projects__projects-common a:hover {
    border: none;
    color: #02CFEA;
-   
+}
+
+.common-item {
+    margin-bottom: 150px;
+}
+
+.my-projects__projects-common--block-two {
+    flex-direction: row-reverse;
+}
+
+.my-projects__projects-text--block-two {
+    margin-right: 93px;
+    margin-left: 0;
+}
+
+.footer {
+    background-color: #000;
 }
 
 
+.footer__item p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+    text-align: center;
+}
 
+.footer__common {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.footer__item {
+    display: flex;
+    align-items: center;
+}
+
+.footer__phone {
+    width: 48px;
+    height: 48px;
+}
+
+.footer__about-me {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.footer__about-me p {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* .footer__town {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 45px;
+}
+
+.footer__step {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 15px;
+} */
