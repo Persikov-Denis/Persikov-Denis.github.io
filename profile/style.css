@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Hind', sans-serif;
-    background-image: url(img/bg.jpg);
-    background-size: cover;
-
-
+    background: aliceblue;
 }
 
 .container {
@@ -13,15 +10,46 @@ body {
     margin: auto;
 }
 
+h2 {
+    text-align: center;
+    margin: 70px 0;
+}
+
 .photo {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 35px;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
 }
 
-.photo img {
+.photo__item {
+    margin-top: -10px;
+}
+
+.photo__phone-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: -22px;
+}
+
+.photo__email {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.photo__phone {
+    margin-left: 5px;
+}
+
+.photo__item img{
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+}
+
+.photo__main {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -32,23 +60,38 @@ body {
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: -15px;
-    color: #ccc;   
 }
 
-header p {
-    color: aliceblue;
+.summary__block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 180px;
+}
+
+.summary__block a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.summary__block a:hover {
+    border: none;
+    color: #3d3636b8;
 }
 
 .my-projects p {
-    color: #fff;
     font-size: 18px;
     margin: 10px 0px;
 }
 
-.common-item h2 {
-    text-align: center;
-    margin: 70px 0;
-    color: #ccc;
+.my-projects {
+    margin-bottom: 140px;
+}
+
+.my-projects__common--block-two {
+    margin-bottom: 20px;
 }
 
 .my-projects img {
@@ -58,18 +101,13 @@ header p {
     object-position: top;
 }
 
-
 .my-projects__projects-common {
     display: flex;
-}
-
-.my-projects__projects-text {
-    margin-left: 93px;
+    justify-content: space-between;
 }
 
 .my-projects__projects-text h3 {
     margin-top: 45px;
-    color: #fff;
 }
 
 .my-projects__link {
@@ -79,71 +117,23 @@ header p {
 .my-projects__projects-common a {
     display: block;
     margin-right: 80px;
-    color: #fff;
     margin-top: 5px;
     text-decoration: none;
     font-size: 18px;
-    border-bottom: 1px solid #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
     padding-bottom: 5px;
 }
 
 .my-projects__projects-common a:hover {
    border: none;
-   color: #02CFEA;
-}
-
-.common-item {
-    margin-bottom: 150px;
+   color: #3d3636b8;
 }
 
 .my-projects__projects-common--block-two {
     flex-direction: row-reverse;
 }
 
-.my-projects__projects-text--block-two {
-    margin-right: 93px;
-    margin-left: 0;
-}
-
-.footer {
-    background-color: #000;
-}
-
-
-.footer__item p {
-    color: #fff;
-    font-size: 18px;
-    margin: 0 5px;
-    text-align: center;
-}
-
-.footer__common {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-.footer__item {
-    display: flex;
-    align-items: center;
-}
-
-.footer__phone {
-    width: 48px;
-    height: 48px;
-}
-
-.footer__about-me {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 45px;
-}
-
-.footer__about-me p {
-    color: #fff;
-    font-size: 18px;
-}
 
 @media screen and (min-width:750px) and (max-width:1170px) {
 
@@ -156,19 +146,6 @@ header p {
         margin-bottom: 40px;
     }
 
-    .my-projects__projects-text--block-two {
-        margin-left: 93px;
-        margin-right: 0;
-    }
-
-    .footer__about-me {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__town {
-        margin-bottom: -7px;
-    }
 }
 
 
@@ -190,7 +167,6 @@ header p {
     .my-projects__projects-common a {
         margin: auto;
         margin-top: 35px;
-
     }
 
     .my-projects__projects-text {
@@ -207,41 +183,85 @@ header p {
         margin-top: 50px;
     }
 
-    .my-projects__projects-text--block-two {
-        margin-right: 0px;
-        margin-left: 0;
-    }
-
     .my-projects .my-projects__item {
         margin-top: 40px;
     }
 
-    .common-item h2 {
+     h2 {
         margin: 35px 0;
     }
 
     .my-projects p {
         margin-left: 25px;
-    }
+    } 
 
-    .footer__about-me {
+    .summary__block {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer__common {
-        flex-direction: column;
+    .summary__block a {
+        margin-bottom: 15px;
     }
+}
 
-    .footer__about-me p {
-        width: 80%;
-        text-align: center;
-    }
+/* summary */
 
-    .footer__item {
-        margin: 20px auto;
-        display: block;
-        text-align: center;
-    }
-    
+.summary p {
+    font-size: 18px;
+    margin: 13px 0;
+}
+
+.summary a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin-left: 7px;
+}
+
+.summary a:hover {
+   border: none;
+   color: #3d3636b8;
+}
+
+.summary__link {
+    display: flex;
+    align-items: center;
+}
+
+.summary__my-projects__common {
+    margin: 100px 0;
+}
+
+.summary__my-projects {
+    margin: 15px 0;
+}
+
+.summary__my-projects__common h2 {
+    text-align: center;
+}
+
+.summary__name-common {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-common__photo {
+    margin: 0;
+}
+
+.summary__my-projects,
+.summary__education,
+.summary__job{
+    display: flex;
+    justify-content: center;
+}
+
+.summary__common-education-job {
+    display: flex;
+    justify-content: space-around;
 }
