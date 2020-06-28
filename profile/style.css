@@ -134,78 +134,8 @@ body {
     flex-direction: row-reverse;
 }
 
-
-@media screen and (min-width:750px) and (max-width:1170px) {
-
-    .my-projects__projects-common {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .my-projects img {
-        margin-bottom: 40px;
-    }
-
-}
-
-
-@media screen and (min-width:320px) and (max-width:750px) {
-
-    .my-projects__projects-common {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .my-projects img {
-        width: 260px;
-    }
-
-    .my-projects__link {
-        flex-direction: column;
-    }
-
-    .my-projects__projects-common a {
-        margin: auto;
-        margin-top: 35px;
-    }
-
-    .my-projects__projects-text {
-        margin-left: 0;
-    }
-
-    .my-projects__projects-text h3 {
-        width: 53%;
-        margin: auto;
-        margin-top: 55px;
-    }
-
-    .photo {
-        margin-top: 50px;
-    }
-
-    .my-projects .my-projects__item {
-        margin-top: 40px;
-    }
-
-     h2 {
-        margin: 35px 0;
-    }
-
-    .my-projects p {
-        margin-left: 25px;
-    } 
-
-    .summary__block {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .summary__block a {
-        margin-bottom: 15px;
-    }
-}
-
 /* summary */
+
 
 .summary p {
     font-size: 18px;
@@ -265,3 +195,101 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
+@media screen and (min-width:750px) and (max-width:1170px) {
+
+    .my-projects__projects-common {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-projects img {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media screen and (min-width:320px) and (max-width:750px) {
+
+    .my-projects__projects-common {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-projects img {
+        width: 260px;
+    }
+
+    .my-projects__link {
+        flex-direction: column;
+    }
+
+    .my-projects__projects-common a {
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    .my-projects__projects-text {
+        margin-left: 0;
+    }
+
+    .my-projects__projects-text h3 {
+        width: 53%;
+        margin: auto;
+        margin-top: 55px;
+    }
+
+    .photo {
+        margin-top: 50px;
+    }
+
+    .my-projects .my-projects__item {
+        margin-top: 40px;
+    }
+
+    .my-projects p {
+        margin-left: 25px;
+    } 
+
+    .summary__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary__block a {
+        margin-bottom: 15px;
+    }
+
+    .summary__name-common {
+        flex-direction: column-reverse;
+    }
+
+    .summary__text {
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+
+    .summary__name {
+        margin: 0;
+    }
+
+    .summary__my-projects {
+        margin: 15px 25px;
+    }
+
+    .summary__common-education-job {
+        flex-direction: column;
+        margin: 0 25px;
+    }
+
+    .summary__education {
+        margin-top: -55px;
+    }
+
+    .summary__job {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
