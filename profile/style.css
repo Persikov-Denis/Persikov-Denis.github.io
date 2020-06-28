@@ -162,14 +162,18 @@ body {
 }
 
 .summary__my-projects__common {
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
-.summary__my-projects {
-    margin: 15px 0;
+.summary__my-projects__common h2,
+.summary__common-education-job h2,
+.summary__skills h2 {
+    text-align: center;
+    margin-bottom: 0px;
 }
 
-.summary__my-projects__common h2 {
+.summary__skills {
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -185,6 +189,7 @@ body {
 }
 
 .summary__my-projects,
+.summary__skills,
 .summary__education,
 .summary__job{
     display: flex;
@@ -272,6 +277,17 @@ body {
 
     .summary__name {
         margin: 0;
+        text-align: center;
+    }
+
+    .summary__education h2,
+    .summary__job h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .summary__my-projects__common h2 {
+        margin-bottom: -15px;
     }
 
     .summary__my-projects {
@@ -284,12 +300,30 @@ body {
     }
 
     .summary__education {
-        margin-top: -55px;
+        margin-top: -15px;
     }
 
     .summary__job {
-        margin-top: 30px;
+        margin-top: 18px;
         margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .summary__skills {
+        margin: 35px 25px;
+    }
+
+    .summary__skills p {
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .summary__skills h2 {
+        margin-bottom: 7px;
+    }
+
+    .summary__job p {
+        line-height: 1;
     }
 }
 
