@@ -113,6 +113,9 @@ a {
     display: flex;
 }
 
+.my-projects .my-projects__img-main {
+    height: 300px;
+}
 .my-projects__link {
     display: block;
     margin-right: 80px;
