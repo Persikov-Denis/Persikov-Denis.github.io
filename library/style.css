@@ -2,6 +2,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background: url(./img/bg.jpg);
+    color: #fff;
 }
 
 
@@ -12,7 +14,25 @@ body {
     margin: 25px 20px;
 }
 
-button {cursor: pointer;}
+button {
+    cursor: pointer;
+    height: 30px;
+    color: #fff;
+    background: #cd630fa8;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #cd640fec;
+    transition: 0.5s;
+
+}
+
+.serch {
+    height: 33px;
+    width: 70px;
+}
 
 
 .content input {
@@ -27,7 +47,6 @@ button {cursor: pointer;}
 .button-add {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
 }
 
 .inpRender {
@@ -51,6 +70,7 @@ button {cursor: pointer;}
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 40px;
 }
 
 .headline th {
@@ -63,6 +83,11 @@ button {cursor: pointer;}
     margin: 20px 0;
 }
 
+.poisk {
+    width: 210px;
+    padding: 7px;
+
+}
 
 td {
     width: 320px;
