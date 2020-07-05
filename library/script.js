@@ -12,7 +12,7 @@ let books = [
 
     {
         id: 2,
-        name: 'Война и мир-2',
+        name: 'Война и мир',
         authorsName: 'Лев Толстой',
         yearPublishing: '1867',
         editionNames: ' М. Н. Каткова',
@@ -30,16 +30,6 @@ let books = [
 ];
 
 
-
-function booksRender() {
-    content.innerHTML = '';
-    
-	books.forEach((book, index) => {
-        let temp = getTemplate(book, index);
-        render(temp);
-    });
-}
-booksRender();
 
 
 function render(temp) {
@@ -86,6 +76,16 @@ function getAddTemplate() {
         </td>
     </tr>`;
 }
+
+function booksRender() {
+    content.innerHTML = '';
+    
+	books.forEach((book, index) => {
+        let temp = getTemplate(book, index);
+        render(temp);
+    });
+}
+booksRender();
 
 content.addEventListener('click', remove);
 content.addEventListener('click', edit);
