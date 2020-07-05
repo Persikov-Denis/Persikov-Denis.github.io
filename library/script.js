@@ -12,7 +12,7 @@ let books = [
 
     {
         id: 2,
-        name: 'Война и мир',
+        name: 'Война и мир-2',
         authorsName: 'Лев Толстой',
         yearPublishing: '1867',
         editionNames: ' М. Н. Каткова',
@@ -21,7 +21,7 @@ let books = [
 
     {
         id: 3,
-        name: '1984',
+        name: 'Имя',
         authorsName: 'Оруэлл Джордж',
         yearPublishing: '1949',
         editionNames: ' Издательство АСТ',
@@ -36,10 +36,10 @@ function render(temp) {
     content.insertAdjacentHTML('beforeend', temp);
 }
 
-function getTemplate(book,index) {
+function getTemplate(book) {
     return `
         <tr class="content">
-            <td class="li-all id">${index +1}</td>
+            <td class="li-all id">${book.id}</td>
             <td  class="input-all id hidden"><input type="text"></td>
             <td class="li-all name">${book.name}</td>
             <td class="input-all name hidden"><input type="text"></td>
@@ -80,8 +80,8 @@ function getAddTemplate() {
 function booksRender() {
     content.innerHTML = '';
     
-	books.forEach((book, index) => {
-        let temp = getTemplate(book, index);
+	books.forEach((book) => {
+        let temp = getTemplate(book);
         render(temp);
     });
 }
@@ -128,6 +128,7 @@ function save(event) {
     let id = +content.querySelector('.id').innerHTML;
 
     let book = {
+        
         name: content.querySelector('.input-all.name input').value,
         authorsName: content.querySelector('.input-all.authorsName input').value,
         yearPublishing: content.querySelector('.input-all.yearPublishing input').value,
@@ -154,21 +155,22 @@ function add() {
 }
 
 
+
+
+
 let serch = document.querySelector('.serch');
 serch.addEventListener('click', serchButton);
 
 function serchButton() {
     let poisk = document.querySelector('.poisk').value;
-    let books2 = books.filter((item) => {
+    books = books.filter((item) => {
         if( item.name.toLowerCase().includes( poisk.toLowerCase() ) ) {
             return true;
         }
+        
     });
 
-    booksRender(books2);
+    booksRender();
 }
-
-
-
 
 
