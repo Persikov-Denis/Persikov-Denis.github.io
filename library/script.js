@@ -21,14 +21,13 @@ let books = [
 
     {
         id: 3,
-        name: 'Имя',
+        name: '1984',
         authorsName: 'Оруэлл Джордж',
         yearPublishing: '1949',
         editionNames: ' Издательство АСТ',
         numberPages: '328',
     }
 ];
-
 
 
 
@@ -140,7 +139,7 @@ function save(event) {
         books.push(book);
 
     } else {
-        let index = books.findIndex((book) => book.id === id);
+        let index = books.findIndex((book) => book.id === +id);
         books.splice(index, 1, book);
     }
 
@@ -155,16 +154,13 @@ function add() {
 }
 
 
-
-
-
 let serch = document.querySelector('.serch');
 serch.addEventListener('click', serchButton);
 
 function serchButton() {
     let poisk = document.querySelector('.poisk').value;
     books = books.filter((item) => {
-        if( item.name.toLowerCase().includes( poisk.toLowerCase() ) ) {
+        if( item.name.toLowerCase().includes( poisk.toLowerCase() )) {
             return true;
         }
         
