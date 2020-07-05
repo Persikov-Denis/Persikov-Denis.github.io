@@ -35,10 +35,10 @@ function render(temp) {
     content.insertAdjacentHTML('beforeend', temp);
 }
 
-function getTemplate(book) {
+function getTemplate(book,index) {
     return `
         <tr class="content">
-            <td class="li-all id">${book.id}</td>
+            <td class="li-all id">${index +1}</td>
             <td  class="input-all id hidden"><input type="text"></td>
             <td class="li-all name">${book.name}</td>
             <td class="input-all name hidden"><input type="text"></td>
@@ -79,8 +79,8 @@ function getAddTemplate() {
 function booksRender() {
     content.innerHTML = '';
     
-	books.forEach((book) => {
-        let temp = getTemplate(book);
+	books.forEach((book,index) => {
+        let temp = getTemplate(book,index);
         render(temp);
     });
 }
