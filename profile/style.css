@@ -118,6 +118,7 @@ a {
 .my-projects .my-projects__img-main {
     height: 300px;
 }
+
 .my-projects__link {
     display: block;
     margin-right: 80px;
@@ -134,6 +135,7 @@ a {
 
 .my-projects__projects-common--block-two {
     flex-direction: row-reverse;
+    margin-bottom: 100px;
 }
 
 /* summary */
