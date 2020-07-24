@@ -193,7 +193,8 @@
   width: 100px;
   height: 100px;
   border: 1px solid #e1e1e1;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
   .product-overview__icon-common:hover {
     background: #008ed6;
     transition: all .7s ease 0s; }
@@ -534,7 +535,8 @@
 
 .quality-price-plan img {
   display: block;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 30px; }
 
 .quality-price-plan__block-comon {
   display: flex;
