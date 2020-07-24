@@ -97,17 +97,15 @@
         font-size: 14px;
         font-weight: 600;
         margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s;
 
         &:hover {
             background: #008ed6;
-
         }
     }
 }
 
-.pricings-plans__get .pricings-plans__button-activ {
-    background: #008ed6;
-}
 ////////////////////////  media  /////////////////////
 
 

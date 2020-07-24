@@ -53,15 +53,12 @@
     cursor: pointer;
     margin-right: 10px;
     font-weight: 600;
+    transition: 0.5s;
 
     &:hover {
         background: #008ed6;
         transition: 0.5s;
     }
-}
-
-.header__block-button .header__button-active {
-    background: #008ed6;
 }
 
 
@@ -127,7 +124,6 @@
         margin: 0 15px;
     }
 }
-
 
 ////////////////////// HEADER КОНЕЦ //////////////////////////////
 
@@ -209,7 +205,6 @@
 
 /* ///////////////////////////MENU  media tablet, phone ////////////////////////////////////*/
 
-
 @media screen and (min-width: 320px) and (max-width: 1170px) {
 
     .menu__list-item {
@@ -257,7 +252,5 @@
         }
     }
 }
-
-
 
 // /* ///////////////////////////MENU КОНЕЦ ////////////////////////////////////*/

@@ -41,13 +41,11 @@
   margin-top: 60px;
   cursor: pointer;
   margin-right: 10px;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: 0.5s; }
   .header__block-button button:hover {
     background: #008ed6;
     transition: 0.5s; }
-
-.header__block-button .header__button-active {
-  background: #008ed6; }
 
 @media screen and (min-width: 750px) and (max-width: 1170px) {
   .header__block-phone img {
@@ -449,12 +447,11 @@
     background: transparent;
     font-size: 14px;
     font-weight: 600;
-    margin: 0 5px; }
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s; }
     .pricings-plans__get-block button:hover {
       background: #008ed6; }
-
-.pricings-plans__get .pricings-plans__button-activ {
-  background: #008ed6; }
 
 @media screen and (min-width: 750px) and (max-width: 1170px) {
   .pricings-plans h2 {
@@ -595,7 +592,8 @@
 .quality-price-plan__block {
   border: 1px solid #e0e0e0;
   text-align: center;
-  width: 23%; }
+  width: 23%;
+  cursor: pointer; }
 
 .quality-price-plan__block .quality-price-plan__price-block--active {
   background: #008ed6; }
@@ -624,7 +622,8 @@
 .quality-price-plan__block:hover button {
   background: #008ed6;
   color: #fff;
-  transition: 0.7s; }
+  transition: 0.7s;
+  cursor: pointer; }
 
 @media screen and (min-width: 750px) and (max-width: 1170px) {
   .quality-price-plan h2 {
@@ -806,7 +805,8 @@
   font-size: 15px;
   padding: 20px;
   color: #444348;
-  margin-top: 20px; }
+  margin-top: 20px;
+  cursor: pointer; }
   .footer__icon:hover {
     color: #008ed6; }
 
