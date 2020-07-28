@@ -163,10 +163,21 @@ function serchButton() {
         if( item.name.toLowerCase().includes( poisk.toLowerCase() )) {
             return true;
         }
-        
     });
 
+
+
     booksRender();
+
 }
+
+document.querySelector('.poisk').onkeypress = function(event) {
+
+    console.log(event.key)
+    console.log(event.keyCode)
+
+};
+
+
 
 
