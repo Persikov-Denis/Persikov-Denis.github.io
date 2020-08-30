@@ -577,7 +577,13 @@ body {
 .pop-up {
     width: 662px;
     height: 522px;
-    background-color: #000;
+    background-color: #000000f0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -331px;
+    margin-top: -180px;
+    z-index: 120;
 
     input {
         width: 383px;
@@ -760,14 +766,6 @@ body {
     display: none;
 }
 
-.pop-up {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -331px;
-    margin-top: -261px;
-}
-
 .display-block {
     display: block;
 }
@@ -918,7 +916,7 @@ body {
 
     .section__two-text {
         top: 300px;
-        width: 305px;
+        width: 290px;
     }
 
     .section__three p {
