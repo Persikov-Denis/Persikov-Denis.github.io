@@ -878,6 +878,11 @@ body {
         display: none;
     }
 
+    .header__grape {
+        background-position: 67%;
+
+    }
+
     .header__botl-text h1 {
         font-size: 74px;
         margin-top: -10px;
@@ -908,6 +913,7 @@ body {
 
     .section__two-under-the-block p {
         font-size: 90px;
+        text-align: center;
     }
 
     .section__two-list-one, .section__two-list-two{
@@ -986,7 +992,7 @@ body {
 
     .section__three-list {
         height: 330px;
-        background-position: top;
+        background-position: 34%;
     }
 
     .menu {

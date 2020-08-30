@@ -698,6 +698,8 @@ body {
     display: none; }
   .header__logo-common .header__number-common {
     display: none; }
+  .header__grape {
+    background-position: 67%; }
   .header__botl-text h1 {
     font-size: 74px;
     margin-top: -10px; }
@@ -715,7 +717,8 @@ body {
     width: 175px;
     height: 175px; }
   .section__two-under-the-block p {
-    font-size: 90px; }
+    font-size: 90px;
+    text-align: center; }
   .section__two-list-one, .section__two-list-two {
     display: none; }
   .section__two-text {
@@ -758,6 +761,6 @@ body {
     font-size: 75px; }
   .section__three-list {
     height: 330px;
-    background-position: top; }
+    background-position: 34%; }
   .menu {
     width: 100%; } }
