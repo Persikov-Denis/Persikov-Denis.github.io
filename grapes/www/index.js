@@ -1,41 +1,43 @@
-window.onscroll = function() {
+window.onscroll = function () {
     let logo = document.querySelector('.header__logo');
 
-    if(window.pageYOffset < 2) {
+    if (window.pageYOffset < 2) {
         logo.style.background = '#000';
-    }
-    else {
+    } else {
         logo.style.background = 'none';
     }
 }
 
-
 window.addEventListener('scroll', parallax);
+
 function parallax(event) {
     document.querySelectorAll('.grape').forEach((item) => {
         let ItemPos = parseFloat(getComputedStyle(item).top);
         item.style.top = (window.pageYOffset + ItemPos) / 5 + 'px';
-   })
+    })
 }
 
 
-document.addEventListener('mousemove',maus);
+document.addEventListener('mousemove', maus);
+
 function maus(event) {
 
     document.querySelectorAll('.grape').forEach((item) => {
         item.style.transform = `translateY(${event.clientY / 5}px)`;
         item.style.transform = `translateY(${getComputedStyle(item).top / 5}px)`;
-   })
+    })
 }
 
 
 window.addEventListener('scroll', parallaxGlassOne);
+
 function parallaxGlassOne() {
-    document.querySelector('.section__three-glass-one').style.top = window.pageYOffset / 7 + 'px'; 
+    document.querySelector('.section__three-glass-one').style.top = window.pageYOffset / 7 + 'px';
 }
 
 
 window.addEventListener('scroll', parallaxGlassTwo);
+
 function parallaxGlassTwo() {
     document.querySelector('.section__three-glass-two').style.top = window.pageYOffset / 9 + 'px';
 }
@@ -57,10 +59,18 @@ callMe.addEventListener('click', () => {
     let popUp = document.querySelector('.pop-up');
     let close = document.querySelector('.pop-up__img');
     close.addEventListener('click', () => {
-    popUp.classList.add('display-none');
+        popUp.classList.add('display-none');
+    });
 
-});
-    
+
+    callMe.addEventListener('click', () => {
+        let popUp = document.querySelector('.pop-up');
+
+        if (popUp.classList.contains('display-none')) {
+            popUp.classList.remove('display-none')
+        }
+    })
+
     function call() {
         return `
             <div class="pop-up">
@@ -92,14 +102,6 @@ callMe.addEventListener('click', () => {
     }
 });
 
-callMe.addEventListener('click', () => {
-    let popUp = document.querySelector('.pop-up');
-
-    if(popUp.classList.contains('display-none')) {
-        popUp.classList.remove('display-none')
-    }
-})
-
 
 let content = document.querySelector('.content');
 let menuCommon = document.querySelector('.menu__common');
@@ -120,9 +122,9 @@ headerBurger.addEventListener('click', () => {
     let menu = document.querySelector('.menu');
     let close = document.querySelector('.menu__img');
     close.addEventListener('click', () => {
-    menu.classList.add('display-none');
+        menu.classList.add('display-none');
 
-});
+    });
 
     function burger() {
         return `
@@ -160,8 +162,7 @@ headerBurger.addEventListener('click', () => {
 headerBurger.addEventListener('click', () => {
     let menu = document.querySelector('.menu');
 
-    if(menu.classList.contains('display-none')) {
+    if (menu.classList.contains('display-none')) {
         menu.classList.remove('display-none')
     }
 })
-
